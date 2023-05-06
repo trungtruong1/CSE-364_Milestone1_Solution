@@ -1,3 +1,4 @@
+git clone https://github.com/trungtruong1/CSE-364_Milestone1_Solution.git
 cd example
 mongod --fork --logpath /var/log/mongodb.log
 mongosh admin --eval "db.createUser({ user: 'admin', pwd: 'password', roles: ['userAdminAnyDatabase'] })"
