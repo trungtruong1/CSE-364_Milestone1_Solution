@@ -39,4 +39,7 @@
 
 ### To build and test your Dockerfile/Docker container: 
 #### `$ docker build -t image_name /path/to/Dockerfile`
-#### `$ docker run -it image_name`
+#### `$ docker run -it image_name` this command will create a temporary Docker container that will disappear as soon as you exit it.
+### Therefore, we suggest a new way to test your Docker container because you need to open the Docker container in another terminal to test your `curl` commands:
+#### `$ docker build -t image_name /path/to/Dockerfile`
+#### `$ docker run -itd image_name` this command will preserve your container even if you exit it, and it allows you to enter the container in another terminal, access container with `$ docker exec -it container_id bash`. Check your `container_id` with `docker -ps a`.
