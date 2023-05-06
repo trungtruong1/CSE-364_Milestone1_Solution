@@ -37,3 +37,6 @@
 
 #### After getting the Dockerfile ready with its dependency, with MongoDB running, you should be ready to pull your source code. Remember to create an User Administratior in MongoDB. Here we do it with our shell script `run.sh` with a couple of commands. The import data process is similar to above. 
 
+### To build and test your Dockerfile/Docker container: 
+#### `$ docker build -t image_name /path/to/Dockerfile`
+#### `$ docker run -it image_name`
